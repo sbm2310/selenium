@@ -1,0 +1,138 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-03-10T11:31:22.210Z",
+    "end": "2022-03-10T11:31:26.954Z",
+    "duration": 4744,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "6ca84776-1050-4d8d-8ba5-252c36526196",
+      "title": "",
+      "fullFile": "C:\\selenium\\test\\secondTest.js",
+      "file": "\\test\\secondTest.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5fcf0e95-84ce-4982-901f-d72746741e9e",
+          "title": "add another todo tests",
+          "fullFile": "C:\\selenium\\test\\secondTest.js",
+          "file": "\\test\\secondTest.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook in \"add another todo tests\"",
+              "fullTitle": "add another todo tests \"before each\" hook in \"add another todo tests\"",
+              "timedOut": null,
+              "duration": 5,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": null,
+              "context": null,
+              "code": "driver = new Builder().forBrowser(\"firefox\").build();",
+              "err": {},
+              "uuid": "8a0cfbb2-f294-4a85-af80-f2335d052da8",
+              "parentUUID": null,
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook in \"add another todo tests\"",
+              "fullTitle": "add another todo tests \"after each\" hook in \"add another todo tests\"",
+              "timedOut": null,
+              "duration": 472,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": null,
+              "context": null,
+              "code": "await driver.quit();",
+              "err": {},
+              "uuid": "401aaf21-7401-4672-8bf0-e6d89434b40a",
+              "parentUUID": null,
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "check items in list",
+              "fullTitle": "add another todo tests check items in list",
+              "timedOut": null,
+              "duration": 4001,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.get(\"https://sortablejs.github.io/Sortable/\");\n    \nlet elements = await driver.findElement(By.id(\"example1\")).findElements(By.className(\"list-group-item\")).then(function(elements){\n    elements.forEach(element => {\n        element.getText().then(function(text){\n            console.log(text);\n        });\n    });\n});",
+              "err": {},
+              "uuid": "32eb0124-02ac-405d-8033-6c096debda58",
+              "parentUUID": null,
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "32eb0124-02ac-405d-8033-6c096debda58"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4001,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": null
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 0
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "9.2.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.2"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.1.1"
+    }
+  }
+}
